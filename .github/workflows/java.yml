@@ -1,5 +1,5 @@
 name: Github Actions CI
-# Second commit to test Github action
+# Commit to test Github action
 on:
   push:
     branches: [ "main" ]
@@ -29,7 +29,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t blessedmine/java-app:latest .
+        run: docker build -t blessedmine/java-app:latest.
 
-      - name: Push Docker image
+      - name: Push Doker image
         run: docker push blessedmine/java-app:latest

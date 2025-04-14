@@ -1,5 +1,5 @@
 name: Github Actions CI
-# Github action for java
+# Github action for java.
 on:
   push:
     branches: [ "main" ]
